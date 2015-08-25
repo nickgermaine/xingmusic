@@ -1,0 +1,6 @@
+{
+  "name": "nodeversionexample",
+  "engines": {
+    "node": "0.12.0"
+  }
+}

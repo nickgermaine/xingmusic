@@ -1,0 +1,145 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,600,400italic,600italic,700,700italic,900,900italic);
+
+.btn-primary.btn-minimal {
+    border: none;
+    margin: 0px;
+    padding: 0px 10px;
+}
+
+.main-card {
+    min-height: 300px;
+    margin-top: 40px;
+    border-radius: 2px;
+    border-bottom: 3px solid #ddd;
+    border-top: 1px solid #eaeaea;
+ }
+ 
+ body {
+    background:#eee;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.record-button {
+    position: absolute;
+    top: 250px;
+    margin: auto;
+    left: 50%;
+    margin-left: -50px;
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    font-size: 14px;
+    text-align: center;
+    color: #428BCA;
+    border: 1px solid;
+    outline: none;
+    }
+    
+    .record-button.active {
+        background-color: #428BCA;
+        color: #fff;
+    }
+    
+    .modal {
+position: fixed;
+top: 0;
+z-index: 11;
+width: 100%;
+min-height: 100%;
+overflow: hidden;
+background-color: #fff;
+opacity: 0;
+-webkit-transition: -webkit-transform .25s, opacity 1ms .25s;
+-moz-transition: -moz-transform .25s, opacity 1ms .25s;
+transition: transform .25s, opacity 1ms .25s;
+-webkit-transform: translate3d(0, 100%, 1px);
+-ms-transform: translate3d(0, 100%, 1px);
+transform: translate3d(0, 100%, 1px);
+}
+.modal.active {
+height: 100%;
+opacity: 1;
+-webkit-transition: -webkit-transform .25s;
+-moz-transition: -moz-transform .25s;
+transition: transform .25s;
+-webkit-transform: translate3d(0, 0, 1px);
+-ms-transform: translate3d(0, 0, 1px);
+transform: translate3d(0, 0, 1px);
+}
+
+.content {
+background: #fafafa;}
+
+.record-results {
+    padding: 10px;
+    color: #aaa;
+    
+    
+  }
+  
+  .record-results.final {
+      color: #333;}
+      
+      .search-results {
+      display:none;
+          padding: 10px 20px;
+      }
+      
+      .song-title {
+          font-size: 28px;
+    line-height: 30px;
+    font-weight: 300;
+        font-size: 20px;
+    font-weight: 400;
+    }
+    
+    .song-album {
+        color: #777;
+        }
+        
+        .video-embed {
+        display:none;
+
+            border: none;
+            width: 330px;
+            margin: auto;
+            max-width: 99%;
+        }
+
+        .manual-search {
+            display:none;
+        }
+
+        .video-card {
+            display:none;
+        }
+
+        .video-card h3 {
+            padding: 10px;
+            font-weight: 300;
+        }
+
+        .main-logo {
+            height: 22px;
+            margin-top: 10px;
+        }
+
+        .start-helper {
+            padding: 20px;
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: 600;
+            color: #444;
+        }
+
+        .content-padded {
+            overflow-y: scroll;
+            height: calc(100% - 100px);
+        }
+.search-results .fa {
+    width: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #5D5D5D;}        
+        
+        

@@ -1,0 +1,102 @@
+
+<head>
+    <meta charset="utf-8">
+    <title>XingMusic</title>
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+</head>
+<body>
+
+<header class="bar bar-nav">
+  <h1 class="title"><img src="/img/xinglogo.png" class="main-logo" /></h1>
+</header>
+<div id="feedbackModal" class="modal">
+  <div class="bar bar-nav">
+    <a class="icon icon-close pull-right" href="#feedbackModal"></a>
+    <h1 class="title">Send feedback</h1>
+  </div>
+
+  <div class="content">
+    <div class="content-padded">
+	    <form>
+  			<input type="text" placeholder="Full name">
+  			<input type="text" placeholder="Email">
+  			<textarea class="feedback-message" placeholder="Write your feedback" rows="5"></textarea>
+  			<button class="btn btn-primary btn-outlined btn-block"><span class="fa fa-send"> </span> Send Feedback</button>
+		</form>
+    
+    </div></div>
+</div>
+<br /><br />
+<div class="content-padded">
+<div class="manual-search">
+<voice-recognition></voice-recognition>
+<textarea class="query-term" placeholder="Search"></textarea>
+<br />
+<button class="search-fire">Search</button>
+</div>
+<div id="results">
+  <span id="final_span" class="final"></span>
+  <span id="interim_span" class="interim"></span>
+
+</div>
+
+	<div class="card main-card">
+        <div class="start-helper">
+
+            1. Hit the button<br />
+            2. sing a song<br />
+            3. let us help you find it
+        </div>
+		<div class="search-results">
+			<div class="song-title"><span class="fa fa-music"> </span> <span class="text"></span></div>
+			<div class="song-artist"><span class="fa fa-user"> </span> <span class="text"></span></div>
+			<div class="song-album"><a href="" target="_blank" class="play-store-link"><img src="/img/play-store.png" /></a></div>
+			<div class="play-search"></div>
+		</div>
+		<div class="record-results"></div>
+		<div class="recordButton">
+			<button class="btn btn-minimal btn-round record-button">
+				<span class="fa fa-2x fa-microphone"></span>			
+			</button>		
+		</div>	
+	</div>
+	<div class="card video-card">
+        <h3>Video</h3>
+		<iframe class="video-embed" src="http://example.com"></iframe>	
+	</div>
+</div>
+
+
+<button class="start-recognizing">Start recognition</button>
+<button class="stop-recognizing">Stop recognition</button>
+<button class="get-languages">Get Supported Languages</button>
+
+
+<nav class="bar bar-tab">
+  <a class="tab-item active" href="#">
+    <span class="icon icon-home"></span>
+    <span class="tab-label">Home</span>
+  </a>
+  <a class="tab-item" href="#">
+    <span class="icon icon-person"></span>
+    <span class="tab-label">Profile</span>
+  </a>
+  <a class="tab-item" href="#">
+    <span class="icon icon-refresh"></span>
+    <span class="tab-label">Recent</span>
+  </a>
+  <a class="tab-item" href="#feedbackModal">
+    <span class="icon icon-compose"></span>
+    <span class="tab-label">Feedback</span>
+  </a>
+</nav>
+
+</body>
